@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,6 @@
 		1F25CB3023298FFA00B002A0 /* MapboxSwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CB2F23298FFA00B002A0 /* MapboxSwiftUIDemoTests.swift */; };
 		1F25CB3B232992D400B002A0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CB3A232992D400B002A0 /* MapView.swift */; };
 		80839E26B5108BB837D3701C /* Pods_MapboxSwiftUIDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF147917F3C173673DDA6F38 /* Pods_MapboxSwiftUIDemoTests.framework */; };
-		8322D824EE3B7E2B827DD91A /* Pods_MapboxSwiftUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5860E11388C7CB50E7942DF0 /* Pods_MapboxSwiftUIDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +41,7 @@
 		1F25CB2F23298FFA00B002A0 /* MapboxSwiftUIDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxSwiftUIDemoTests.swift; sourceTree = "<group>"; };
 		1F25CB3123298FFA00B002A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F25CB3A232992D400B002A0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		229AE6B1CE5F420AAFB00FE9 /* Pods-MapboxSwiftUIDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxSwiftUIDemoTests.release.xcconfig"; path = "Target Support Files/Pods-MapboxSwiftUIDemoTests/Pods-MapboxSwiftUIDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		2A203354BBB295152BD3C224 /* Pods-MapboxSwiftUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxSwiftUIDemo.release.xcconfig"; path = "Target Support Files/Pods-MapboxSwiftUIDemo/Pods-MapboxSwiftUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5860E11388C7CB50E7942DF0 /* Pods_MapboxSwiftUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapboxSwiftUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A3F87FC14B913129FFBAFDB /* Pods-MapboxSwiftUIDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxSwiftUIDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-MapboxSwiftUIDemoTests/Pods-MapboxSwiftUIDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C7D59B06F314F394133D47B2 /* Pods-MapboxSwiftUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxSwiftUIDemo.debug.xcconfig"; path = "Target Support Files/Pods-MapboxSwiftUIDemo/Pods-MapboxSwiftUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EF147917F3C173673DDA6F38 /* Pods_MapboxSwiftUIDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapboxSwiftUIDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,7 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8322D824EE3B7E2B827DD91A /* Pods_MapboxSwiftUIDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +79,6 @@
 				1F25CB1723298FF700B002A0 /* MapboxSwiftUIDemo */,
 				1F25CB2E23298FF900B002A0 /* MapboxSwiftUIDemoTests */,
 				1F25CB1623298FF700B002A0 /* Products */,
-				E3E30B5A3B06195E36012F4A /* Pods */,
 				1CAF0C40054288D00BAB8B0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -131,17 +124,6 @@
 			path = MapboxSwiftUIDemoTests;
 			sourceTree = "<group>";
 		};
-		E3E30B5A3B06195E36012F4A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C7D59B06F314F394133D47B2 /* Pods-MapboxSwiftUIDemo.debug.xcconfig */,
-				2A203354BBB295152BD3C224 /* Pods-MapboxSwiftUIDemo.release.xcconfig */,
-				6A3F87FC14B913129FFBAFDB /* Pods-MapboxSwiftUIDemoTests.debug.xcconfig */,
-				229AE6B1CE5F420AAFB00FE9 /* Pods-MapboxSwiftUIDemoTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,11 +131,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F25CB3423298FFA00B002A0 /* Build configuration list for PBXNativeTarget "MapboxSwiftUIDemo" */;
 			buildPhases = (
-				2224C432DAF761E6F8DCF06F /* [CP] Check Pods Manifest.lock */,
 				1F25CB1123298FF700B002A0 /* Sources */,
 				1F25CB1223298FF700B002A0 /* Frameworks */,
 				1F25CB1323298FF700B002A0 /* Resources */,
-				CA467A9B9A2566241DF84E15 /* [CP] Embed Pods Frameworks */,
 				1F25CB3C2329A0EF00B002A0 /* Insert Mapbox Access Token */,
 			);
 			buildRules = (
@@ -262,28 +242,6 @@
 			shellPath = /bin/sh;
 			shellScript = "$SRCROOT/insert_access_token.sh\n";
 		};
-		2224C432DAF761E6F8DCF06F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MapboxSwiftUIDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8AD7B96502547C2E1F960FFC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,23 +262,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CA467A9B9A2566241DF84E15 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MapboxSwiftUIDemo/Pods-MapboxSwiftUIDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MapboxSwiftUIDemo/Pods-MapboxSwiftUIDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapboxSwiftUIDemo/Pods-MapboxSwiftUIDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -483,7 +424,6 @@
 		};
 		1F25CB3523298FFA00B002A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7D59B06F314F394133D47B2 /* Pods-MapboxSwiftUIDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,7 +444,6 @@
 		};
 		1F25CB3623298FFA00B002A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A203354BBB295152BD3C224 /* Pods-MapboxSwiftUIDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,7 +464,6 @@
 		};
 		1F25CB3823298FFA00B002A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A3F87FC14B913129FFBAFDB /* Pods-MapboxSwiftUIDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,7 +486,6 @@
 		};
 		1F25CB3923298FFA00B002A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 229AE6B1CE5F420AAFB00FE9 /* Pods-MapboxSwiftUIDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
