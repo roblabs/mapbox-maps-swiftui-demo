@@ -22,6 +22,10 @@ struct MapView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: MGLMapView, context: UIViewRepresentableContext<MapView>) {
+
+        /// Update Style using Raster sources from https://github.com/roblabs/xyz-raster-sources
+        let styleUrl = "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/style.json"
+        mapView.styleURL = URL(string: styleUrl)
         updateAnnotations()
     }
     

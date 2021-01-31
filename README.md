@@ -7,6 +7,7 @@ Please refer to the tutorial for a step by step guide.
 ## Change Log
 
 * Jan 30, 2021
+  * Update Style using Raster sources from https://github.com/roblabs/xyz-raster-sources
   * Convert to MapLibre
      * Swift Package from https://github.com/maptiler/maplibre-gl-native-distribution
   * Remove CocoaPods
