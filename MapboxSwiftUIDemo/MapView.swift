@@ -25,7 +25,7 @@ struct MapView: UIViewRepresentable {
 
         /// Update Style using Raster sources from https://github.com/roblabs/xyz-raster-sources
         let xyzRasterStyle = "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/style.json"
-        setStyle(xyzRasterStyle)
+        let _ = setStyle(xyzRasterStyle)
         updateAnnotations()
     }
     
