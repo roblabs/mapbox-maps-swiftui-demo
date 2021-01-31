@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		1F25CB3023298FFA00B002A0 /* MapboxSwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CB2F23298FFA00B002A0 /* MapboxSwiftUIDemoTests.swift */; };
 		1F25CB3B232992D400B002A0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CB3A232992D400B002A0 /* MapView.swift */; };
 		80839E26B5108BB837D3701C /* Pods_MapboxSwiftUIDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF147917F3C173673DDA6F38 /* Pods_MapboxSwiftUIDemoTests.framework */; };
+		D7F0896225C62AC9002F1F53 /* MapboxMobileEvents in Frameworks */ = {isa = PBXBuildFile; productRef = D7F0896125C62AC9002F1F53 /* MapboxMobileEvents */; };
+		D7F0896425C62AC9002F1F53 /* Mapbox in Frameworks */ = {isa = PBXBuildFile; productRef = D7F0896325C62AC9002F1F53 /* Mapbox */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F0896225C62AC9002F1F53 /* MapboxMobileEvents in Frameworks */,
+				D7F0896425C62AC9002F1F53 /* Mapbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +145,10 @@
 			dependencies = (
 			);
 			name = MapboxSwiftUIDemo;
+			packageProductDependencies = (
+				D7F0896125C62AC9002F1F53 /* MapboxMobileEvents */,
+				D7F0896325C62AC9002F1F53 /* Mapbox */,
+			);
 			productName = MapboxSwiftUIDemo;
 			productReference = 1F25CB1523298FF700B002A0 /* MapboxSwiftUIDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +200,9 @@
 				Base,
 			);
 			mainGroup = 1F25CB0C23298FF700B002A0;
+			packageReferences = (
+				D7F0896025C62AC9002F1F53 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+			);
 			productRefGroup = 1F25CB1623298FF700B002A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -537,6 +548,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7F0896025C62AC9002F1F53 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maptiler/maplibre-gl-native-distribution.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7F0896125C62AC9002F1F53 /* MapboxMobileEvents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7F0896025C62AC9002F1F53 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = MapboxMobileEvents;
+		};
+		D7F0896325C62AC9002F1F53 /* Mapbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7F0896025C62AC9002F1F53 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = Mapbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F25CB0D23298FF700B002A0 /* Project object */;
 }

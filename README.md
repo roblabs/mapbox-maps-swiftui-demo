@@ -7,5 +7,6 @@ Please refer to the tutorial for a step by step guide.
 ## Change Log
 
 * Jan 30, 2021
-  * Convert to MapLibre Swift Packages
+  * Convert to MapLibre
+     * Swift Package from https://github.com/maptiler/maplibre-gl-native-distribution
   * Remove CocoaPods
